@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ankit Singh | Marketing, Texas A&amp;M University</title>
+<meta name="description" content="Ankit Singh, Ph.D. candidate in Marketing at Mays Business School, Texas A&M University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #FBFBFA;
+  --ink: #1F2328;
+  --muted: #5F646B;
+  --rule: #E2E2DE;
+  --maroon: #500000;
+  --maroon-soft: #F3E9E9;
+  --serif: "Newsreader", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: "Public Sans", "Segoe UI", -apple-system, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15171A; --ink: #E7E5E2; --muted: #A2A5AA; --rule: #2C2F33;
+    --maroon: #D48A8C; --maroon-soft: #2A1D1E;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15171A; --ink: #E7E5E2; --muted: #A2A5AA; --rule: #2C2F33;
+  --maroon: #D48A8C; --maroon-soft: #2A1D1E;
+}
+*, *::before, *::after { box-sizing: inherit; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--maroon); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--maroon); outline-offset: 3px; border-radius: 2px; }
+
+.wrap {
+  max-width: 1080px; margin: 0 auto; padding: 56px 28px 80px;
+  display: grid; grid-template-columns: 300px 1fr; gap: 72px;
+}
+aside { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 48px); align-self: start; }
+.name {
+  font-family: var(--serif); font-weight: 500; font-size: 44px; line-height: 1.02;
+  letter-spacing: -0.01em; margin: 0 0 18px;
+}
+.role { font-size: 15px; margin: 0; color: var(--ink); }
+.school {
+  font-family: var(--serif); font-size: 21px; line-height: 1.25; color: var(--maroon);
+  margin: 4px 0 22px; font-weight: 500;
+}
+.market {
+  display: inline-block; font-size: 13.5px; font-weight: 500; color: var(--maroon);
+  background: var(--maroon-soft); padding: 5px 10px; border-radius: 3px; margin-bottom: 26px;
+}
+.contact { list-style: none; padding: 0; margin: 0 0 28px; font-size: 14.5px; }
+.contact li { padding: 7px 0; border-top: 1px solid var(--rule); }
+.contact li:last-child { border-bottom: 1px solid var(--rule); }
+.contact span { display: block; font-size: 12.5px; color: var(--muted); }
+nav ul { list-style: none; padding: 0; margin: 0; font-size: 14.5px; }
+nav li { margin: 4px 0; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--maroon); }
+
+main { max-width: 680px; }
+section { margin-bottom: 64px; }
+h2 {
+  font-family: var(--serif); font-weight: 500; font-size: 28px; margin: 0 0 20px;
+  padding-bottom: 10px; border-bottom: 2px solid var(--maroon);
+}
+h3 { font-size: 15px; font-weight: 600; color: var(--muted); margin: 32px 0 6px; }
+.lede { font-family: var(--serif); font-size: 21px; line-height: 1.55; margin: 0 0 18px; }
+.about p { margin: 0 0 14px; }
+
+.paper { padding: 16px 0 18px; border-bottom: 1px solid var(--rule); }
+.paper:last-child { border-bottom: 0; }
+.paper-title { font-family: var(--serif); font-size: 19.5px; line-height: 1.35; margin: 0 0 6px; font-weight: 500; }
+.authors { font-size: 14.5px; color: var(--muted); margin: 0 0 6px; }
+.authors b { color: var(--ink); font-weight: 600; }
+.status { font-size: 14px; margin: 0; }
+.status em { font-style: italic; font-weight: 600; font-size: 16px; color: var(--ink); }
+.stage {
+  display: inline-block; font-size: 12.5px; font-weight: 600; color: var(--maroon);
+  border: 1px solid var(--maroon); border-radius: 3px; padding: 1px 7px; margin-right: 8px;
+}
+.jmp { background: var(--maroon-soft); padding: 18px 20px; border-radius: 4px; border-bottom: 0; }
+.abstract { font-size: 15px; line-height: 1.65; margin: 12px 0 0; color: var(--ink); }
+.note { font-size: 14px; color: var(--maroon); margin: 6px 0 0; }
+
+.list { list-style: none; padding: 0; margin: 0; }
+.list li { display: grid; grid-template-columns: 64px 1fr; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.list li:last-child { border-bottom: 0; }
+.yr { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 14.5px; }
+.list .sub { display: block; color: var(--muted); font-size: 14px; font-style: italic; }
+
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 18px; }
+
+@media (max-width: 860px) {
+  .wrap { grid-template-columns: 1fr; gap: 40px; padding: 36px 20px 64px; }
+  aside { position: static; }
+  nav { display: none; }
+  .name { font-size: 38px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <h1 class="name">Ankit Singh</h1>
+    <p class="role">Ph.D. Candidate in Marketing</p>
+    <p class="school">Mays Business School<br>Texas A&amp;M University</p>
+    <div class="market">On the 2026–27 academic job market</div>
+    <ul class="contact">
+      <li><span>Email</span><a href="mailto:asingh@mays.tamu.edu">asingh@mays.tamu.edu</a></li>
+      <li><span>Office</span>Department of Marketing, Mays Business School, College Station, TX 77843</li>
+      <li><span>Dissertation committee</span>Amalesh Sharma (Chair), David A. Griffith, Yan (Lucy) Liu, Michael C. Withers</li>
+    </ul>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#awards">Honors</a></li>
+        <li><a href="#talks">Presentations</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="Ankit_Singh_CV.pdf">CV (PDF)</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p class="lede">I study how firms, markets, and policies shape who gets access to services, and what that means for customers, employees, and firm value.</p>
+      <p>My substantive work spans healthcare marketing and access to services, consumer and employee well-being, AI and technology in marketing strategy, and sustainability strategy. Methodologically, I combine causal inference with archival and field data, machine learning, and natural language processing.</p>
+      <p>Before the Ph.D., I earned an MBA from the Institute of Rural Management Anand, worked as a research assistant at IIM Udaipur, and began my career as a business analyst at Accenture.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+
+      <h3>Job market paper</h3>
+      <article class="paper jmp">
+        <p class="paper-title">The Residual Segment: How Market Segmentation Shapes What Customers Receive in Health Care</p>
+        <p class="authors"><b>Ankit Singh</b>, Amalesh Sharma, and Sarang Sunder</p>
+        <p class="status"><span class="stage">Job market paper</span>Paper available on request</p>
+        <p class="abstract">Firms and regulators often pool customers who fit no core market into a residual segment. Does belonging to this segment change the service customers receive? We study a 2023 reform that dissolved a residual insurance pricing region and merged its mostly rural counties into nearby metropolitan markets, while care stayed in the same hospitals. Using a difference-in-differences design and 1.97 million hospital admissions, we find that integration raised service use by 9.5%, increased the chronic conditions providers recorded by 3.6%, and cut seven-day mortality by 17%. Effects were largest for patients with the most varied needs. Segment boundaries shape what providers learn about customers and what customers receive.</p>
+      </article>
+
+      <h3>Papers under review</h3>
+      <article class="paper">
+        <p class="paper-title">Cross-Functional AI Integration and Firm Performance: Evidence from S&amp;P 500 Earnings Calls and 10-K Filings</p>
+        <p class="authors"><b>Ankit Singh</b>, Amalesh Sharma, and V. Kumar</p>
+        <p class="status"><span class="stage">R&amp;R, Round II</span><em>Production and Operations Management</em></p>
+      </article>
+      <article class="paper">
+        <p class="paper-title">Responsible Business Transformation: When Is AI Attention Associated with Lower Corporate Emissions?</p>
+        <p class="authors"><b>Ankit Singh</b> and Amalesh Sharma</p>
+        <p class="status"><span class="stage">Round III</span><em>California Management Review</em></p>
+      </article>
+      <article class="paper">
+        <p class="paper-title">Prioritizing Workforce Mental Health for Marketing Excellence and Firm Performance</p>
+        <p class="authors"><b>Ankit Singh</b>, David A. Griffith, and Amalesh Sharma</p>
+        <p class="status"><span class="stage">Round I</span><em>Journal of Marketing</em></p>
+      </article>
+      <article class="paper">
+        <p class="paper-title">Supplier ESG Training as a Source of Competitive Advantage: Capability Building versus Compliance</p>
+        <p class="authors"><b>Ankit Singh</b>, Amalesh Sharma, and Alok Saboo</p>
+        <p class="status"><span class="stage">Round I</span><em>Management Science</em></p>
+      </article>
+      <article class="paper">
+        <p class="paper-title">Beyond Customer Experience: How Customer Participation Extends the Value of AI Interface Technology</p>
+        <p class="authors"><b>Ankit Singh</b>, Amalesh Sharma, and Praveen K. Kopalle</p>
+        <p class="status"><span class="stage">Submitted</span><em>Journal of the Academy of Marketing Science</em></p>
+      </article>
+      <article class="paper">
+        <p class="paper-title">From Claims to Customer Value: Reframing Insurance Claims as Drivers of Retention and Family Lifetime Value</p>
+        <p class="authors">Vikas Sharma, V. Kumar, <b>Ankit Singh</b>, Rajendra Srivastava, and Amalesh Sharma</p>
+        <p class="status"><span class="stage">Round I</span><em>Journal of the Academy of Marketing Science</em></p>
+      </article>
+
+      <h3>Working papers</h3>
+      <article class="paper">
+        <p class="paper-title">Do Food Assistance Programs Improve Young Mothers’ Nutritious Consumption?</p>
+        <p class="authors"><b>Ankit Singh</b>, Vedha Ponnappan, Prakash Satyavageeswaran, and Sundar G. Bharadwaj</p>
+        <p class="status">Manuscript ready for submission; field study completed</p>
+        <p class="note">Best Overall Paper Award, 2025 AMA Marketing &amp; Public Policy Conference</p>
+      </article>
+      <article class="paper">
+        <p class="paper-title">The ROI of Responsibility: Linking Customer-Centric Sustainability to Firm Performance through Strategic Fit</p>
+        <p class="authors"><b>Ankit Singh</b>, Amalesh Sharma, and Rajnish Rai</p>
+        <p class="status">Manuscript ready for submission</p>
+      </article>
+
+      <h3>Work in progress</h3>
+      <article class="paper">
+        <p class="paper-title">When Barriers Redirect Demand: Channel-Selective Deterrence Across Service Modes</p>
+        <p class="authors"><b>Ankit Singh</b>, Praveen K. Kopalle, and Amalesh Sharma</p>
+        <p class="status">Manuscript in preparation</p>
+      </article>
+
+      <h3>Publication</h3>
+      <article class="paper">
+        <p class="paper-title">Factors Affecting Follow-Up Adherence of Glaucoma Patients</p>
+        <p class="authors"><b>Ankit Singh</b>, B. Udayakumar, T. Duraisamy Ravilla, V. Ponnappan, R. Krishnadas, and P. Satyavageeswaran</p>
+        <p class="status"><em>Ophthalmic Epidemiology</em> (2023). <a href="https://doi.org/10.1080/09286586.2023.2199842">doi:10.1080/09286586.2023.2199842</a></p>
+      </article>
+    </section>
+
+    <section id="awards">
+      <h2>Honors and awards</h2>
+      <ul class="list">
+        <li><span class="yr">2026</span><span>Outstanding Research Award, Mays Business School, Texas A&amp;M University</span></li>
+        <li><span class="yr">2026</span><span>AMA-Sheth Foundation Doctoral Consortium Fellow, Fordham University</span></li>
+        <li><span class="yr">2025</span><span>Best Overall Paper Award, AMA Marketing &amp; Public Policy Conference<span class="sub">Do Food Assistance Programs Improve Young Mothers’ Nutritious Consumption?</span></span></li>
+      </ul>
+    </section>
+
+    <section id="talks">
+      <h2>Presentations</h2>
+      <ul class="list">
+        <li><span class="yr">2026</span><span>AMA-Sheth Foundation Doctoral Consortium, Fordham University<span class="sub">When Barriers Redirect Demand: Channel-Selective Deterrence Across Service Modes</span></span></li>
+        <li><span class="yr">2025</span><span>AMA Marketing &amp; Public Policy Conference, Washington, DC<span class="sub">Do Food Assistance Programs Improve Young Mothers’ Nutritious Consumption?</span></span></li>
+        <li><span class="yr">2025</span><span>AMA Winter Academic Conference<span class="sub">Organizational Capabilities, Customer-Centric Sustainability Strategies, and Firm Performance</span></span></li>
+        <li><span class="yr">2024</span><span>INFORMS Marketing Science Conference<span class="sub">Do Food Assistance Programs Improve Young Mothers’ Nutritious Consumption?</span></span></li>
+        <li><span class="yr">2023</span><span>Innovations to Tackle Global Sustainability Challenges Conference<span class="sub">How Does Governing Sustainability Influence Transparency? Role of Firm Capability and Influence</span></span></li>
+        <li><span class="yr">2022</span><span>AMA Winter Academic Conference<span class="sub">Income Effect of Food Subsidy in Improving Food Well-Being</span></span></li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul class="list">
+        <li><span class="yr">2024</span><span>Instructor of Record, MKTG 323: Marketing Research (required undergraduate course), Mays Business School<span class="sub">Two sections; overall instructor effectiveness 4.19 and 4.10 out of 5.00. Teaching mentor: Leslie S. Seipp.</span></span></li>
+      </ul>
+    </section>
+
+    <footer><a href="Ankit_Singh_CV.pdf">Download CV (PDF)</a> &nbsp;·&nbsp; <a href="mailto:asingh@mays.tamu.edu">asingh@mays.tamu.edu</a></footer>
+  </main>
+</div>
+</body>
+</html>
